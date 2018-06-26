@@ -14,8 +14,11 @@
   Then alert your name using dot notation.
 */
 
-//Code here
-
+var me = {
+  name: "Rachel",
+  age: 31
+}; //Code here
+alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -25,7 +28,14 @@
   Have the values to those keys be your favorite thing in that category.
 */
 
-//Code here
+let favoriteThings={
+ band: "cold play",
+ food: "Chapo",
+ person: "Leo",
+ book: "An enquiry into the nature of wealth of economies",
+ movie: "A quiet place",
+ holiday: "Paris"
+}; //Code here
 
 
 
@@ -33,7 +43,8 @@
   After you've made your object, add another key named 'car' with the value being your favorite car and then another key named 'brand' with the value being your favorite brand.
 */
 
-//Code here
+favoriteThings.car="Range";
+favoriteThings.brand="Toyota";//Code here
 
 
 
@@ -41,7 +52,8 @@
   Now change the value of the food key in your favoriteThings object to be 'Chicken Nuggets' and change the value of the book key in your favoriteThings object to be 'Harry Potter'.
 */
 
-//Code here
+favoriteThings.food="Chicken Nuggets";
+favoriteThings.book="Harry Potter";//Code here
 
 
 
@@ -55,7 +67,10 @@
   Using dot notation, add another key (or property) to your backPack object that is named color, with the value being the color of your backpack. 
 */
 
-//Code here
+let backPack ={};
+let item = 'firstPocket'
+backPack[item]='chapstick';
+backPack.color='red'; //Code here
 
 
 
@@ -63,6 +78,7 @@
   After you do the above, alert your entire backPack object.
 */
 
+console.log(backPack);
 //Code here
 
 
@@ -96,7 +112,8 @@ var user2 = {
   Make that change without modifying the original object code above.
 */
 
-//Code Here
+user2.name='Tyler S. McGinnis';
+user2.email='tyler.mcginnis@devmounta.in' //Code Here
 
 
 
@@ -119,6 +136,7 @@ var user2 = {
   Create an empty object called methodCollection.
 */
 
+let methodCollection={};
 //Code Here
 
 
@@ -128,7 +146,6 @@ var user2 = {
   One called 'alertHello' which alerts 'hello' and another method called 'logHello' which logs 'hello' to the console. 
 */
 
-//Code Here
 
 
 
@@ -136,7 +153,9 @@ var user2 = {
   Now call your alertHello and logHello methods.
 */
 
-//Code Here
+let methodCollection={};
+methodCollection.alertHello=function(){alert('hello')}
+methodCollection.logHello=function(){console.log('hello')} //Code Here
 
 
 
